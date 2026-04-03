@@ -1,0 +1,8 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        map = []
+        for i in range(len(nums)):
+            if nums[i] in map:
+                return True
+            map.append(nums[i])
+        return False
